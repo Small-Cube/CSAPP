@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     fd_set read_set,ready_set;
     if (argc != 2)
     {
-        fprintf(stderr, "usage: %s <por
+        fprintf(stderr, "usage: %s <port>\n", argv[0]);
         exit(0);
     }
     port = atoi(argv[1]);
@@ -38,5 +38,5 @@ int main(int argc, char **argv)
      echo(connfd);
      Close(connfd);
      return NULL;
- }
+ }     
             
